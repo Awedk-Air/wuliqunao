@@ -1,0 +1,31 @@
+body {
+	padding: 0 0 0 0;
+	text-align: center;
+	background-color: #eee;
+}
+#title {
+	color: #222;
+	text-align: center;
+	margin-bottom: 0px;
+	box-shadow: 0px 10px 20px #aaa;
+	padding: 20px 10px 10px 10px;
+	margin: 0 auto;
+	margin-top: -20px;
+	border-radius: 15px;
+	width: 500px;
+	background-color: RGB(220, 220, 220);
+}
+
+#zhengbindiv {
+	position: relative;
+	border: 5px solid RGB(2, 2, 2);
+	width: 700px;
+	height: 350px;
+	margin: 0 auto;
+}
+.tip {
+	float: right;
+}
+#gd {
+	color: #222;
+}
