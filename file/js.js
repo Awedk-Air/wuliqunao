@@ -59,7 +59,7 @@ function main(){
                         ctx.fillStyle = "#ffffff";
                         ctx.fillRect(0,0,document.querySelector("#zhengbindiv").clientWidth,document.querySelector("#zhengbindiv").height);
                         document.querySelector("h1").innerHTML = "⭐️游戏结束，点击屏幕重来⭐️"
-                        s = true;
+                        setTimeout("s = true;", 100)
                         clearInterval(a);
                     }
                 }
