@@ -14,16 +14,31 @@ var doing = false;
 var speed = 10;
 var score = 0;
 var ctx = document.querySelector("#zhengbindiv").getContext("2d");
+var s = false;
 zhengbin.src = "./img/郑斌.png";
 shaoxiang.src = "./img/烧香.png";
 zhengbin.onload = function() {
     ctx.drawImage(zhengbin, 10, y,  60, 60)
 }
 document.onclick = function(){
-    y = 30;
-    setTimeout("y = 80;", 300)
+    if (!s){
+        y = 30;
+        setTimeout("y = 80;", 300)
+    } else {
+        setTimeout(main, 1000)
+        s = false;
+        y = 80;
+        x = 200;
+        count = 0;
+        doing = false;
+        speed = 10;
+        score = 0;
+        document.querySelector("h1").innerHTML = "⭐️帮助郑斌跳过烧香⭐️";
+    }
 }
-setTimeout(function(){
+ctx.fillStyle = "#ffffff";
+ctx.fillRect(0,0,document.querySelector("#zhengbindiv").clientWidth,document.querySelector("#zhengbindiv").height);
+function main(){
     var a = setInterval(function(){
         ctx.fillStyle = "#ffffff";
         ctx.fillRect(0,0,document.querySelector("#zhengbindiv").clientWidth,document.querySelector("#zhengbindiv").height);
@@ -43,7 +58,8 @@ setTimeout(function(){
                     } else if (x >= 20 && x <= 40) {
                         ctx.fillStyle = "#ffffff";
                         ctx.fillRect(0,0,document.querySelector("#zhengbindiv").clientWidth,document.querySelector("#zhengbindiv").height);
-                        document.querySelector("h1").innerHTML = "⭐️游戏结束⭐️"
+                        document.querySelector("h1").innerHTML = "⭐️游戏结束，点击屏幕重来⭐️"
+                        s = true;
                         clearInterval(a);
                     }
                 }
@@ -54,5 +70,6 @@ setTimeout(function(){
         ctx.drawImage(zhengbin, 10, y, 60, 60);
         document.querySelector("#gd").innerHTML = "分数："+score
     }, 50);
-}, 3000)
+}
+setTimeout(main, 3000)
 
