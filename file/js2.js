@@ -1,7 +1,7 @@
 var number = 1;
 var gongde = 0;
-var password = prompt("品正的WIFI密码");
-if (!(password == "67676767")){
+var password = prompt("冬天的百草园是吴魏的还是无味的？（回答1或2）");
+if (!(password == "1")){
     alert("密码错误");
     location.reload();
 }
