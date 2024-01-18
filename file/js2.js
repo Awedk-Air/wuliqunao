@@ -15,7 +15,7 @@ var speed = 10;
 var score = 0;
 var ctx = document.querySelector("#zhengbindiv").getContext("2d");
 var s = false;
-zhengbin.src = "./img/郑斌.png";
+zhengbin.src = "./img/未命名33.png";
 shaoxiang.src = "./img/烧香.png";
 zhengbin.onload = function() {
     ctx.drawImage(zhengbin, 10, y,  60, 60)
