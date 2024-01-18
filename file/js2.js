@@ -33,7 +33,7 @@ document.onclick = function(){
         doing = false;
         speed = 10;
         score = 0;
-        document.querySelector("h1").innerHTML = "⭐️帮助郑斌跳过烧香⭐️";
+        document.querySelector("h1").innerHTML = "⭐️帮助吴魏跳过烧香⭐️";
     }
 }
 ctx.fillStyle = "#ffffff";
