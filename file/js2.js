@@ -1,10 +1,5 @@
 var number = 1;
 var gongde = 0;
-var password = prompt("冬天的百草园是吴魏的还是无味的？（回答1或2）");
-if (!(password == "1")){
-    alert("密码错误");
-    location.reload();
-}
 var zhengbin = new Image();
 var shaoxiang = new Image();
 var x = 200;
