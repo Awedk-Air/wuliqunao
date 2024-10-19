@@ -44,7 +44,7 @@ function main(){
             }
         } else {
             if (x > -60){
-                ctx.drawImage(forever, x, 95, 30, 70)
+                ctx.drawImage(forever, x, 95, 30, 55)
                 x -= speed;
                 speed += 0.01
                 if (x >= 5 && x <= 70) {
