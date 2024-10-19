@@ -1,7 +1,7 @@
 var number = 1;
 var gongde = 0;
 var wuwei = new Image();
-var foreaver = new Image();
+var forever = new Image();
 var x = 200;
 var y = 80;
 var count = 0;
@@ -11,7 +11,7 @@ var score = 0;
 var ctx = document.querySelector("#wuweidiv").getContext("2d");
 var s = false;
 wuwei.src = "./img/未命名33.png";
-foreaver.src = "./img/未命名44.png";
+forever.src = "./img/未命名44.png";
 wuwei.onload = function() {
     ctx.drawImage(wuwei, 10, y,  60, 60)
 }
@@ -44,7 +44,7 @@ function main(){
             }
         } else {
             if (x > -60){
-                ctx.drawImage(foreaver, x, 85, 30, 50)
+                ctx.drawImage(forever, x, 85, 30, 30)
                 x -= speed;
                 speed += 0.01
                 if (x >= 5 && x <= 70) {
